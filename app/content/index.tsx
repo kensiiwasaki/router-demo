@@ -1,12 +1,13 @@
-import { StyleSheet, Text, View } from "react-native";
+import { Link } from 'expo-router';
+import { StyleSheet, Text, View } from 'react-native';
 
 export default function Content() {
   return (
     <View style={styles.container}>
       <View style={styles.main}>
         <Text style={styles.title}>Hello World</Text>
-        <Text>contentだよ</Text>
-        <Text style={styles.subtitle}>This is the first page of your app.</Text>
+        <Text>Home Screen</Text>
+        <Link href="/content/modal">Present modal</Link>
       </View>
     </View>
   );
@@ -15,21 +16,17 @@ export default function Content() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    alignItems: "center",
+    alignItems: 'center',
     padding: 24,
   },
   main: {
     flex: 1,
-    justifyContent: "center",
+    justifyContent: 'center',
     maxWidth: 960,
-    marginHorizontal: "auto",
+    marginHorizontal: 'auto',
   },
   title: {
     fontSize: 64,
-    fontWeight: "bold",
-  },
-  subtitle: {
-    fontSize: 36,
-    color: "#38434D",
+    fontWeight: 'bold',
   },
 });
