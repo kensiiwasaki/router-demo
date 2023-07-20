@@ -7,7 +7,9 @@ export default function Content() {
       <View style={styles.main}>
         <Text style={styles.title}>Hello World</Text>
         <Text>Home Screen</Text>
-        <Link href="/content/modal">Present modal</Link>
+        <Link style={styles.title} href="/content/modal">
+          Open modal
+        </Link>
       </View>
     </View>
   );
